@@ -10,7 +10,8 @@ import App from './App'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
      <BrowserRouter>
-        <Routes element={<App/>} path='/'>
+        <Routes>
+          <Route element={<App/>} path='/'/>
           <Route element={<Home/>} path='/home'/>
           <Route element={<Ofertas/>} path='/ofertas'/>
           <Route element={<Produtos/>} path='/produtos'/>
