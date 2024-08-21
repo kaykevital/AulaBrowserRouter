@@ -6,9 +6,15 @@ export default function App () {
         <div>
             <ol type='1'>
                 <li>
-                    <Link to="/Home">Atividade 1: Criar componente de página Home</Link>
+                    <Link to="/home">Home</Link>
                 </li>
-            </ol> 
+                <li>
+                    <Link to="/ofertas">Ofertas</Link>
+                </li>
+                <li>
+                    <Link to="/produtos">Produtos</Link>
+                </li>
+            </ol>
         </div>
     )
 }

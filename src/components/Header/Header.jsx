@@ -1,7 +1,7 @@
 export default function Header () {
     return(
-        <header>
+        <div>
             <h1>HORTHENCIAO MODA MACHO</h1>
-        </header>
+        </div>
     )
 }
