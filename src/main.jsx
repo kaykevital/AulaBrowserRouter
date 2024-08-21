@@ -6,6 +6,7 @@ import Ofertas from './Ofertas/index'
 import Produtos from './Produtos/index'
 import App from './App'
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
      <BrowserRouter>
