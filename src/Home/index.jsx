@@ -23,25 +23,30 @@ export default function Home () {
     return(
        
         <div className="principalHome">
-            
             <Header/>
+
             <div className="Home-Carrossel">
                 <Carousel infiniteLoop useKeyboardArrows autoPlay showArrows={true} showStatus={false} showThumbs={false} dynamicHeight>
-                <div>
+                    <div>
+                        <img src="src/imgs/pernadrag1.png" alt="Slide 3" /> 
                         <img src="src/imgs/pernadrag2.png" alt="Slide 3" />
+                        
                     </div>
                 </Carousel>
             </div>
+
             <div className="Home-Produtos">
                 {
                     produtosHome.map((produto)=> 
                         <div key={produto.id}>
                                 <img src={produto.imagem}/>
                                 <p> { produto.item} </p>
+                                <p> {produto.preco}</p>
                         </div>
                     )
                 }
             </div>
+            
         </div>
     )
 }   
