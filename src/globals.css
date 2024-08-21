@@ -23,16 +23,31 @@ img{
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
-ol {
+
+.Header li{
+    display: inline-block;
+    background-color: lightblue;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+
+Link{
+    color: white
+}
+
+
+
+.App ol {
     list-style-type: none;
     padding: 0;
 }
 
-li {
+.App li {
     margin-bottom: 12px;
 }
 
-li a {
+.App li a {
     display: block;
     padding: 12px;
     border-radius: 6px;
@@ -42,8 +57,20 @@ li a {
     transition: background-color 0.3s ease;
 }
 
-li a:hover {
+.App li a:hover {
     background-color: #e0e0e0;
+}
+
+.Footer{
+    background-color: black;
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding: auto;
+}
+
+p {
+    font-size: 25px;
 }
 
 @media (max-width: 768px) {

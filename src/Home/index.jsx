@@ -1,4 +1,5 @@
 import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { useState } from "react";
@@ -46,6 +47,8 @@ export default function Home () {
                     )
                 }
             </div>
+
+            <Footer/>
             
         </div>
     )

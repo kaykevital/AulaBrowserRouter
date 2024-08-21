@@ -3,7 +3,7 @@ import "./globals.css";
 
 export default function App () {
     return(
-        <div>
+        <div className="App">
             <ol type='1'>
                 <li>
                     <Link to="/home">Home</Link>
