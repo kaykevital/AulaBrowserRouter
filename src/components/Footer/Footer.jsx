@@ -1,14 +1,27 @@
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import { faInstagram, faGithub, faSquareXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { FaInstagram, FaGithub } from "react-icons/fa";   
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
     return(
-        <div className="Footer">
-            <p>© 2024 Kayke Vital - Todos os direitos reservados.</p>
-            
-        </div>
-        /*<FontAwesomeIcon icon={faInstagram} />
-        <FontAwesomeIcon icon={faXTwitter} />
-        <FontAwesomeIcon icon={faGithub} />*/
+        <footer>
+            <div className='footer-icone'>
+                <li>
+                    <a href="https://www.instagram.com/kayke.vital/" target="_blank" rel="noopener noreferrer">
+                        <FaInstagram/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/kaykevital" target="_blank" rel="noopener noreferrer">
+                        <FaGithub/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/KaykeKase" target="_blank" rel="noopener noreferrer">
+                        <FaXTwitter/>
+                    </a>
+                </li>
+            </div>
+            <p>© Todos os direitos reservados a Kayke Vital</p>
+        </footer>
     )
 }
