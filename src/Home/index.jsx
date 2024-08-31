@@ -5,7 +5,6 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { useState } from "react";
 import ListaProdutos from "../components/ListarProdutos/ListarProdutos";
 
-
 export default function Home () {
     const [listaProdutos, setProdutos] = useState([
         {
@@ -23,24 +22,38 @@ export default function Home () {
 
             preço: "R$ 39,90"
         },
-
         {
             id: 2,
     
-            nome: "Viper",
+            nome: "Phoenix",
 
-            classe: "Controlador",
+            classe: "Duelista",
     
-            origem: "Estados Unidos",
+            origem: "Reino Unido",
     
-            imagem: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/152244f121e61ca32bdd2bea9fc5370e315664fb-616x822.png?auto=format&fit=fill&q=80&w=352",
+            imagem: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/47387e354c34d51b84066bc47af3c5755b92b9c5-616x822.png?auto=format&fit=fill&q=80&w=352",
     
-            habilidades: ["Veneno de Cobra, Nuvem Venenosa, Cortina Tóxica, Poço Peçonhento "] ,
+            habilidades: ["Labareda, Bola Curva, Mãos Quentes, Renascimento"] ,
 
             preço: "R$ 39,90"
         },
         {
             id: 3,
+    
+            nome: "Sage",
+
+            classe: "Sentinela",
+    
+            origem: "China",
+    
+            imagem: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/58a180961a14beb631877921e647c233804853c1-616x822.png?auto=format&fit=fill&q=80&w=352",
+    
+            habilidades: ["Orbe de lentidão, Orbe Curativo, Orbe de Barreira, Ressureição"] ,
+
+            preço: "R$ 39,90"
+        },
+        {
+            id: 10,
     
             nome: "Omen",
 
@@ -55,37 +68,21 @@ export default function Home () {
             preço: "R$ 39,90"
         },
         {
-            id: 4,
-    
-            nome: "Killjoy",
-
-            classe: "Sentinela",
-    
-            origem: "Alemanha",
-    
-            imagem: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/820d36d431fff77b1e1ece39ad6f007746bd31f6-616x822.png?auto=format&fit=fill&q=80&w=352",
-    
-            habilidades: ["Nanoenxame, Robo de Alarme, Torreta, Confinamento"] ,
-
-            preço: "R$ 39,90"
-        },
-        {
             id: 5,
     
-            nome: "Cypher",
+            nome: "Viper",
 
-            classe: "Sentinela",
+            classe: "Controlador",
     
-            origem: "Marrocos",
+            origem: "Estados Unidos",
     
-            imagem: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/4a648cdbcbbeef137050deefeaf6a1369c606666-616x822.png?auto=format&fit=fill&q=80&w=352",
+            imagem: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/152244f121e61ca32bdd2bea9fc5370e315664fb-616x822.png?auto=format&fit=fill&q=80&w=352",
     
-            habilidades: ["Fio-Armadilha, Jaula Cibernética, Câmera de Vigilância, Assalto Neural"] ,
+            habilidades: ["Veneno de Cobra, Nuvem Venenosa, Cortina Tóxica, Poço Peçonhento "] ,
 
             preço: "R$ 39,90"
         },
     ])
-
 
     return(
         <>
@@ -103,9 +100,8 @@ export default function Home () {
                         </div>
                 </Carousel>
             </div>
-            <ListaProdutos Produtos={listaProdutos}/>
+            <ListaProdutos Produtos={listaProdutos} className="produtohome"/>
             <Footer/>
-            
         </>
     )
 }   

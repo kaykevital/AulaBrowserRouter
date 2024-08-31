@@ -1,6 +1,13 @@
 body {
     height: 100%;
     margin: 0;
+    background-color: #0f1923;
+    font-family: 'Poppins', sans-serif;
+    color: #ece8e1;
+}
+
+body h2 {
+    font-size: 25px;
 }
 
 header{
@@ -16,14 +23,32 @@ header h2 {
     margin: 0;
 }
 
-.links{
-    display: flex;
-    color:white;
-    font-size: 20px; 
+.links {
     display: initial; 
-    margin-right: 70px;  
+    color: white; 
+    font-size: 20px; 
+    margin-right: 70px; 
     text-align: left; 
-    text-decoration: none;
+    text-decoration: none; 
+}
+
+.links:link {
+    color: white; 
+    color: inherit; 
+}
+
+.links:visited {
+    color: white;
+    color: inherit; 
+}
+
+.links:hover {
+    color: #e0e0e0; 
+    
+}
+
+.links:active {
+    color: white; 
 }
 
 .carrosel img {
@@ -33,9 +58,10 @@ header h2 {
 
 .produtos{
     flex-direction: column;
-    background-color: rgb(129, 134, 153);
-    max-width: 300px;
+    background-color: #29333c;
+    max-width: 350px;
     text-align: center;
+
 }
 
 .container-produtos {
@@ -43,6 +69,26 @@ header h2 {
     grid-template-columns: repeat(5, 1fr);
     gap: 20px; 
     padding: 20px;
+}
+
+.produtos-img{
+    padding-top: 30px;
+    max-width: 300px;
+}
+
+.botao{
+    background-color: #0f1923;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 7px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+.botao:hover{
+    background-color: rgb(64, 74, 83);
 }
 
 footer {
@@ -75,6 +121,17 @@ main{
     margin-top: 150px;
 }
 
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    background: url('https://freight.cargo.site/w/3840/q/75/i/a17dfc0b27e50cb1c75dcd8fcd13a2d11783729f60265d9a00d184bc5a8d9296/VALORANT_1.png') no-repeat center center fixed;
+    background-size: cover;
+}
 
 .App ol {
     list-style-type: none;
@@ -89,24 +146,26 @@ main{
     display: block;
     padding: 12px;
     border-radius: 6px;
-    background-color: #f5f5f5;
-    color: #333;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
+.App li a:link {
+    color: inherit; 
+}
+
+.App li a:visited {
+    color: inherit; 
+}
+
 .App li a:hover {
-    background-color: #e0e0e0;
+    color: inherit; 
 }
 
 
-
-
-
-
-
-
-
+.App li a:active {
+    background-color: #d0d0d0; 
+}
 
 
 @media (max-width: 1200px) {
