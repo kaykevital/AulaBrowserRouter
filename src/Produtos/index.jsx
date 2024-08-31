@@ -226,7 +226,7 @@ export default function Produtos () {
     
             imagem: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/8d88f133f735f6a9077679b1ece754e5624c728e-616x822.png?auto=format&fit=fill&q=80&w=352",
     
-            habilidades: ["Wingman, Dizzy, Mosh Pit, Thrash"] ,
+            habilidades: ["Clarão da Wingman, Dizzy Voadora, Explosão Mosh Pit, Thrash Corredora"] ,
 
             preço: "R$ 39,90"
         },
