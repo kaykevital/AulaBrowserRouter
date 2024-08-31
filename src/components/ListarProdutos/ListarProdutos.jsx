@@ -1,16 +1,7 @@
-import { useState } from "react";
-
 export default function ListaProdutos({Produtos}){
-
-    const [listaProdutos, setListaProdutos] = useState ([]);
-    const adicionarProdutoPedido = (itens) =>{
-        setListaProdutos([...listaProdutos,itens]);
-    }
-  
     return(
         <>
             <div class="container-produtos"> 
-    
                 {
                     Produtos.map((itens) =>
                         <div class="produtos" key= {itens.id}>
@@ -21,7 +12,7 @@ export default function ListaProdutos({Produtos}){
                             <p>Habilidades</p>
                             <h2> {itens.habilidades}</h2>
                             <h2>Preço: {itens.preço}</h2>
-                            <button className="botao" onClick={() =>adicionarProdutoPedido(itens)}>Comprar</button>
+                            <button className="botao">Comprar</button>
                         </div>
                 
                     )
